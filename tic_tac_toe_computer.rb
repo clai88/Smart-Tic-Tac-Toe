@@ -3,16 +3,15 @@ require './tic_tac_toe'
 # tictactoe computer class
 class TicTacToeComputer < TicTacToe
   def start
-    puts "Welcome! Let's play tic tac toe"
-    puts 'Enter your name.'
-    @player = gets.chomp
+    puts "Hit enter to play"
+    gets
   end
 
   def make_a_move
     i = 0
     while @board & @valid_moves != []
       if i.even?
-        puts "\nPlayer #{@player}! Make your move!"
+        puts "\nMake your move!"
         loop do
           move = gets.chomp
           if valid?(move.capitalize)
