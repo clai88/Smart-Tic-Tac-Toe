@@ -8,3 +8,11 @@ The computer is good, <br>
 but not as good as erik. <br>
 If you lose, <br>
 You might turn into a parrot. <br>
+
+
+this version is simply an AI that you play against
+
+to play, simply type
+```ruby runner.rb```
+
+have fun!

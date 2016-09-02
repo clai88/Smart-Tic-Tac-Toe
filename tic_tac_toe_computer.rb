@@ -41,9 +41,7 @@ class TicTacToeComputer < TicTacToe
      /  _.\' /
     //~`\\-\'
  =====//===(=))========= '
-
-
-      : "#{@player} wins."
+      : "You win."
     else
       puts 'Tie game!'
     end
@@ -66,9 +64,9 @@ class TicTacToeComputer < TicTacToe
     move = try_to_win(valid_indeces, "X ")
     return move unless move == nil
 
-    return check_tricky_corner(valid_indeces) != [] ? check_tricky_corner(valid_indeces): valid_indeces.sample
+    return check_tricky_corner(valid_indeces)
   end
-
+  
   def try_to_win(available,piece)
     available.each do |i|
       play_board = @board.dup
@@ -78,11 +76,12 @@ class TicTacToeComputer < TicTacToe
     nil
   end
 
-  def check_tricky_corner(valid_indeces)
+  def check_tricky_corner(available)
     if @board[0] == 'X ' && @board[8] ||
        @board[2] == 'X ' && @board[6]
-      return ([1, 3, 5, 7] & valid_indeces).sample
+      return ([1, 3, 5, 7] & available).sample
     end
-    []
+    a = ([0, 2, 6, 8] & available).sample
+    return a == [] ? available.sample : a
   end
 end
