@@ -1,3 +1,5 @@
+require 'pry'
+require 'colorize'
 class Board
     attr_reader :board
     attr_reader :valid_moves
@@ -22,15 +24,24 @@ end
 
 module PrintBoard
     def self.print_board(board)
-        # i = 5
-        # puts `echo "\033[32;1mtest #{i} passed\033[0m"`
-
 
         system "clear"
-        print " #{board[0]} | #{board[1]} | #{board[2]} \n"
+
+        copy_board = board.dup
+
+        copy_board.each_with_index do |i,index|
+            if copy_board[index] == "X "
+                copy_board[index] = copy_board[index].green
+            end
+            if copy_board[index] == "O "
+                copy_board[index] = copy_board[index].red
+            end
+        end
+
+        print " #{copy_board[0]} | #{copy_board[1]} | #{copy_board[2]} \n"
         print "-------------\n"
-        print " #{board[3]} | #{board[4]} | #{board[5]} \n"
+        print " #{copy_board[3]} | #{copy_board[4]} | #{copy_board[5]} \n"
         print "-------------\n"
-        print " #{board[6]} | #{board[7]} | #{board[8]} \n"
+        print " #{copy_board[6]} | #{copy_board[7]} | #{copy_board[8]} \n"
     end
 end
