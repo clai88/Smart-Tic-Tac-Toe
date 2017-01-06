@@ -3,6 +3,8 @@ require './tic_tac_toe_computer'
 require './board'
 
 puts "Welcome to tic-tac-toe!"
+# puts "player mode selected" if ARGV == "-t"
+
   b = Board.new
   b.fill_in_placeholders
   a = TicTacToeComputer.new(b.board, b.valid_moves)

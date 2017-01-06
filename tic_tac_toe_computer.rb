@@ -66,7 +66,7 @@ class TicTacToeComputer < TicTacToe
 
     return check_tricky_corner(valid_indeces)
   end
-  
+
   def try_to_win(available,piece)
     available.each do |i|
       play_board = @board.dup

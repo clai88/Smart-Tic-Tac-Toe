@@ -1,3 +1,13 @@
+#Instructions
+this version is simply an AI that you play against
+
+to play, simply type
+```git clone http://github.com/clai88/Smart-Tic-Tac-Toe```
+into the command line, and the type < br \>
+
+```ruby runner.rb```
+
+have fun!
 #poem
 Tic tac toe game, <br>
 Play with no shame. <br>
@@ -9,10 +19,3 @@ but not as good as erik. <br>
 If you lose, <br>
 You might turn into a parrot. <br>
 
-#Instructions
-this version is simply an AI that you play against
-
-to play, simply type
-```ruby runner.rb```
-
-have fun!
