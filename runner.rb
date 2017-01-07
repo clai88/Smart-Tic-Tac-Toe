@@ -21,7 +21,7 @@ elsif ARGV[0] == '-h' || ARGV[0] == '--help'
     x = "X".green
     o = "O".red
     h = "-h".red
-    help = "-help".red
+    help = "--help".red
     t = "-t".red
 
     puts "NAME".red
