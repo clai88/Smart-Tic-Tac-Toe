@@ -3,7 +3,7 @@ this version is simply an AI that you play against
 
 to play, simply type
 ```git clone http://github.com/clai88/Smart-Tic-Tac-Toe```
-into the command line, and then type < br \>
+into the command line, and then type <br>
 
 ```ruby runner.rb```
 
