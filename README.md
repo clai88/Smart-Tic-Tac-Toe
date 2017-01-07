@@ -2,10 +2,13 @@
 this version is simply an AI that you play against
 
 to play, simply type
-```git clone http://github.com/clai88/Smart-Tic-Tac-Toe```
+```git clone http://github.com/clai88/Smart-Tic-Tac-Toe``` \n
 into the command line, and then type <br>
 
 ```ruby runner.rb```
+
+\n
+To play with another person, use the ```-t``` option
 
 have fun!
 #poem
@@ -18,4 +21,3 @@ The computer is good, <br>
 but not as good as erik. <br>
 If you lose, <br>
 You might turn into a parrot. <br>
-
