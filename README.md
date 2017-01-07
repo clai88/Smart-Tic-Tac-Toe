@@ -1,17 +1,15 @@
 #Instructions
-this version is simply an AI that you play against
 
 to play, simply type
-```git clone http://github.com/clai88/Smart-Tic-Tac-Toe``` \n
-into the command line, and then type <br>
+```$git clone http://github.com/clai88/Smart-Tic-Tac-Toe```
+into the command line <br>
 
-```ruby runner.rb```
+then type ```ruby runner.rb```
 
-\n
-To play with another person, use the ```-t``` option
+To play with another person, append ```-t``` to the previous command
 
 have fun!
-#poem
+##poem
 Tic tac toe game, <br>
 Play with no shame. <br>
 Play against a computer, <br>
