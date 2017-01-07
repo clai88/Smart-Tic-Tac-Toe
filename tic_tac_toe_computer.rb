@@ -1,10 +1,11 @@
 require './tic_tac_toe'
+require 'pry'
 
 # tictactoe computer class
 class TicTacToeComputer < TicTacToe
   def start
     puts "Hit enter to play"
-    gets
+    STDIN.gets.chomp
   end
 
   def make_a_move
@@ -13,7 +14,7 @@ class TicTacToeComputer < TicTacToe
       if i.even?
         puts "\nMake your move!"
         loop do
-          move = gets.chomp
+          move = STDIN.gets.chomp
           if valid?(move.capitalize)
             index = @valid_moves.index(move.capitalize)
             @board[index] = 'X '

@@ -12,10 +12,10 @@ class TicTacToe
     i = 0
     while @board & @valid_moves != []
       player = i.even? ? @p1 : @p2
-      puts "\nPlayer #{player}! Make your move!"
+      puts "\n#{player}! Make your move!"
 
       loop do
-        move = gets.chomp
+        move = STDIN.gets.chomp
         if valid?(move.capitalize)
           index = @valid_moves.index(move.capitalize)
           @board[index] = player == @p1 ? 'X ' : 'O '
@@ -40,10 +40,9 @@ class TicTacToe
   end
 
   def start
-    puts "Welcome! Let's play tic tac toe"
     puts 'Player 1. Enter your name.'
-    @p1 = gets.chomp
+    @p1 = STDIN.gets.chomp
     puts 'Player 2. Enter your name.'
-    @p2 = gets.chomp
+    @p2 = STDIN.gets.chomp
   end
 end
