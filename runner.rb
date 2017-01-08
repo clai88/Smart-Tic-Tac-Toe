@@ -3,9 +3,6 @@ require './tic_tac_toe_computer'
 require './board'
 require 'colorize'
 
-
-# puts "player mode selected" if ARGV == "-t"
-
 # binding.pry
 if ARGV[0] == '-t'
     puts "Welcome to tic-tac-toe!"
